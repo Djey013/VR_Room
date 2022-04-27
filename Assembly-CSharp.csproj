@@ -13,7 +13,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{b2af8826-c5b6-0565-b936-4497244806c4}</ProjectGuid>
+    <ProjectGuid>{498c151a-d4fe-146c-50ab-93ff51f28d14}</ProjectGuid>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -55,13 +55,13 @@
      <Compile Include="Assets\Scripts\Samples\UpdateControlText.cs" />
      <Compile Include="Assets\Scripts\Samples\ActionBasedControllerManager.cs" />
      <Compile Include="Assets\Scripts\Samples\BubbleGun.cs" />
+     <Compile Include="Assets\Scripts\Light_Interruptor.cs" />
      <Compile Include="Assets\Scripts\Samples\ControllerManager.cs" />
+     <Compile Include="Assets\Scripts\Clamp_Drawer.cs" />
      <Compile Include="Assets\Scripts\Samples\ComplexCube.cs" />
+     <Compile Include="Assets\Scripts\Clamp_Closet_Door.cs" />
      <Compile Include="Assets\Scripts\Samples\LocomotionSchemeManager.cs" />
      <Compile Include="Assets\Scripts\Samples\LocomotionConfigurationMenu.cs" />
-     <Compile Include="Assets\Scripts\Clamp_Drawer.cs" />
-     <Compile Include="Assets\Scripts\Clamp_Closet_Door.cs" />
-     <Compile Include="Assets\Scripts\Light_Interruptor.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
@@ -307,13 +307,13 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/PackageCache/com.unity.analytics@3.6.12/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/PackageCache/com.unity.analytics@3.6.12/AnalyticsStandardEvents/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/PackageCache/com.unity.analytics@3.6.12/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -664,169 +664,169 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.22f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Shaders">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Advertisements">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/UnityEngine.Advertisements.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Searcher.Editor">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.Searcher.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.InputSystem">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Analytics">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Analytics.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Analytics.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.SpatialTracking">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.InteractionSubsystems">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.XR.InteractionSubsystems.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.XR.InteractionSubsystems.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ShaderGraph.Editor">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.CoreUtils.Editor">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.XR.CoreUtils.Editor.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.XR.CoreUtils.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.WindowsMixedReality.Editor">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.XR.WindowsMixedReality.Editor.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.XR.WindowsMixedReality.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.ARSubsystems.Editor">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.XR.ARSubsystems.Editor.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.XR.ARSubsystems.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.Management">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics.Editor">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.Mathematics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Monetization">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.ARSubsystems">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.XR.ARSubsystems.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.XR.ARSubsystems.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.Oculus.Editor">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.XR.Oculus.Editor.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.XR.Oculus.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Runtime">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.WindowsMixedReality">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.XR.WindowsMixedReality.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.XR.WindowsMixedReality.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder.AddOns.Editor">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport.Editor">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.XR.OpenXR.Features.OculusQuestSupport.Editor.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.XR.OpenXR.Features.OculusQuestSupport.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.Management.Editor">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.Interaction.Toolkit">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.XR.Interaction.Toolkit.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.XR.Interaction.Toolkit.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Runtime">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Subsystem.Registration">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder.Editor">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.OpenXR.Features.OculusQuestSupport">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.XR.OpenXR.Features.OculusQuestSupport.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.XR.OpenXR.Features.OculusQuestSupport.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Mathematics">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.Mathematics.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Universal.Editor">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.XR.LegacyInputHelpers">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.OpenXR.Editor">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.XR.OpenXR.Editor.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.XR.OpenXR.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.CoreUtils">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.XR.CoreUtils.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.XR.CoreUtils.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.XR.LegacyInputHelpers">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.OpenXR">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.XR.OpenXR.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.XR.OpenXR.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.Interaction.Toolkit.Editor">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.XR.Interaction.Toolkit.Editor.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.XR.Interaction.Toolkit.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.Oculus">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.XR.Oculus.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.XR.Oculus.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.SpatialTracking">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Advertisements.Editor">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/UnityEngine.Advertisements.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.OpenXR.Features.ConformanceAutomation">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.XR.OpenXR.Features.ConformanceAutomation.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.XR.OpenXR.Features.ConformanceAutomation.dll</HintPath>
  </Reference>
  <Reference Include="Unity.RenderPipelines.Core.Editor">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.OpenXR.Features.RuntimeDebugger.Editor">
- <HintPath>D:/JeremyVernagallo/Unity/VR_GRETA_2022/Library/ScriptAssemblies/Unity.XR.OpenXR.Features.RuntimeDebugger.Editor.dll</HintPath>
+ <HintPath>D:/JeremyVernagallo/Unity/VR_Room/Library/ScriptAssemblies/Unity.XR.OpenXR.Features.RuntimeDebugger.Editor.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
