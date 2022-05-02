@@ -42,7 +42,6 @@ public class BaseActionnable : MonoBehaviour
         if (!actionInstantanee)
         {
             isSelected = false;
-            
         }
     }
 
@@ -61,7 +60,6 @@ public class BaseActionnable : MonoBehaviour
         if (isSelected)
         {
             ActionContinue(_interactorPosition.position);
-
         }
     }
 }

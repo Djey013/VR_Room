@@ -27,7 +27,8 @@ public class Tiroir : BaseActionnable
             prevInteractorPosZ = interactor.z;
         }
 
-        float delta = Mathf.Clamp(interactor.z - prevInteractorPosZ, -0.01f, 0.01f);    //creation d'un delta pour definir la distance de deplacement du tiroir    
+        float delta = Mathf.Clamp(interactor.z - prevInteractorPosZ, -0.01f, 0.01f);    //creation d'un delta pour definir la distance de
+                                                                                                    //deplacement du tiroir    
 
         prevInteractorPosZ = interactor.z;
         
