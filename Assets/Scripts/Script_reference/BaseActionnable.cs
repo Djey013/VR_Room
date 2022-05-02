@@ -10,7 +10,7 @@ public class BaseActionnable : MonoBehaviour
     public bool actionInstantanee = true;       //action instantanee = fonctionne sur le coup (ex: interrupteur).
                                                 //non instantanee = reste fonctionnel > bouton selected toujours pressé (ex : tiroir)
     public bool isSelected = false;
-    public Vector3 interactorPosition;
+    public Transform _interactorPosition;
 
     private void OnEnable()
     {
@@ -29,7 +29,7 @@ public class BaseActionnable : MonoBehaviour
         if (!actionInstantanee)
         {
             isSelected = true;
-            interactorPosition = args.interactorObject.transform.position;
+            _interactorPosition = args.interactorObject.transform;
         }
         else
         {
@@ -42,7 +42,7 @@ public class BaseActionnable : MonoBehaviour
         if (!actionInstantanee)
         {
             isSelected = false;
-            interactorPosition = Vector3.zero;
+            
         }
     }
 
@@ -60,7 +60,7 @@ public class BaseActionnable : MonoBehaviour
     {
         if (isSelected)
         {
-            ActionContinue(interactorPosition);
+            ActionContinue(_interactorPosition.position);
 
         }
     }

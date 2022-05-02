@@ -53,17 +53,17 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Samples\UpdateControlText.cs" />
+     <Compile Include="Assets\Scripts\Script_reference\BaseActionnable.cs" />
      <Compile Include="Assets\Scripts\Samples\ActionBasedControllerManager.cs" />
      <Compile Include="Assets\Scripts\Samples\BubbleGun.cs" />
-     <Compile Include="Assets\Scripts\Light_Interruptor.cs" />
+     <Compile Include="Assets\Scripts\Script_reference\Button.cs" />
+     <Compile Include="Assets\Scripts\Script_team\Light_Interruptor.cs" />
      <Compile Include="Assets\Scripts\Samples\ControllerManager.cs" />
-     <Compile Include="Assets\Scripts\Clamp_Drawer.cs" />
+     <Compile Include="Assets\Scripts\Script_team\Clamp_Drawer.cs" />
      <Compile Include="Assets\Scripts\Samples\ComplexCube.cs" />
-     <Compile Include="Assets\Scripts\Clamp_Closet_Door.cs" />
+     <Compile Include="Assets\Scripts\Script_team\Clamp_Closet_Door.cs" />
      <Compile Include="Assets\Scripts\Samples\LocomotionSchemeManager.cs" />
      <Compile Include="Assets\Scripts\Samples\LocomotionConfigurationMenu.cs" />
-     <Compile Include="Assets\Scripts\Script_reference\Button.cs" />
-     <Compile Include="Assets\Scripts\Script_reference\BaseActionnable.cs" />
      <Compile Include="Assets\Scripts\Script_reference\Tiroir.cs" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
