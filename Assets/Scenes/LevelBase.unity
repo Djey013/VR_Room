@@ -973,7 +973,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh21190
+  m_Name: pb_Mesh21148
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1238,6 +1238,7 @@ GameObject:
   - component: {fileID: 448561648}
   - component: {fileID: 448561647}
   - component: {fileID: 448561646}
+  - component: {fileID: 448561652}
   - component: {fileID: 448561650}
   - component: {fileID: 448561649}
   - component: {fileID: 448561651}
@@ -1333,15 +1334,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 448561644}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2ba54a1ef8f8a748b89caacd3dc1655, type: 3}
+  m_Script: {fileID: 11500000, guid: 2ec496226a80d034cb7fd974aa8482ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  directionalLight: {fileID: 1485231911}
-  i: 1
-  lightOff: {fileID: 2100000, guid: 305f7bf247857f7459a0de4804803e9d, type: 2}
-  lightOn: {fileID: 2100000, guid: 8b328b522b04b254a96f0f4375ad3f47, type: 2}
-  lampe: {fileID: 242799090}
-  selected: {fileID: 448561650}
+  interactable: {fileID: 448561650}
+  actionInstantanee: 1
+  isSelected: 0
+  interactorPosition: {x: 0, y: 0, z: 0}
+  light: {fileID: 0}
+  lightObject: {fileID: 0}
 --- !u!114 &448561650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1436,6 +1437,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &448561652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448561644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ec496226a80d034cb7fd974aa8482ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable: {fileID: 448561650}
+  actionInstantanee: 1
+  isSelected: 0
+  interactorPosition: {x: 0, y: 0, z: 0}
+  light: {fileID: 1485231911}
+  lightObject: {fileID: 242799090}
 --- !u!1 &609006058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1532,6 +1551,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 609006058}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &710667101 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1980187689, guid: ecdbf3dc6204e7a46943712ecfb94c12,
+    type: 3}
+  m_PrefabInstance: {fileID: 1478643851}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &733170971
 GameObject:
   m_ObjectHideFlags: 0
@@ -4238,7 +4263,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh20972
+  m_Name: pb_Mesh20930
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -9847,7 +9872,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2087111738895877989}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 1723240484}
@@ -9916,43 +9941,6 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 0}
-  m_AttachEaseInTime: 0.15
-  m_MovementType: 1
-  m_VelocityDamping: 1
-  m_VelocityScale: 1
-  m_AngularVelocityDamping: 1
-  m_AngularVelocityScale: 1
-  m_TrackPosition: 1
-  m_SmoothPosition: 1
-  m_SmoothPositionAmount: 5
-  m_TightenPosition: 0.5
-  m_TrackRotation: 0
-  m_SmoothRotation: 0
-  m_SmoothRotationAmount: 5
-  m_TightenRotation: 0.5
-  m_ThrowOnDetach: 0
-  m_ThrowSmoothingDuration: 0.25
-  m_ThrowSmoothingCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
-  m_ThrowAngularVelocityScale: 1
-  m_ForceGravityOnDetach: 0
-  m_RetainTransformParent: 0
-  m_AttachPointCompatibilityMode: 0
 --- !u!114 &2087111738895877991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9962,9 +9950,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2087111738895877989}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e66b69f21cad3524093804ff9abc1655, type: 3}
+  m_Script: {fileID: 11500000, guid: 1983cc1558d0d794e995f48993c33b41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactable: {fileID: 2087111738895877990}
+  actionInstantanee: 0
+  isSelected: 0
+  interactorPosition: {x: 0, y: 0, z: 0}
+  _controllerposition: {fileID: 710667101}
 --- !u!1 &2087111739730982348
 GameObject:
   m_ObjectHideFlags: 0
@@ -9978,7 +9971,7 @@ GameObject:
   - component: {fileID: 420025972145232260}
   - component: {fileID: 47951210855639585}
   - component: {fileID: 1824353662}
-  - component: {fileID: 2087111739730982350}
+  - component: {fileID: 2087111739730982351}
   - component: {fileID: 2087111739730982349}
   m_Layer: 0
   m_Name: Tiroir (2)
@@ -9996,19 +9989,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2087111739730982348}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e66b69f21cad3524093804ff9abc1655, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2087111739730982350
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2087111739730982348}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a35f6cfbfba9b548aaa00d52cfe8a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_InteractionManager: {fileID: 1723240484}
@@ -10077,43 +10058,23 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_AttachTransform: {fileID: 0}
-  m_AttachEaseInTime: 0.15
-  m_MovementType: 1
-  m_VelocityDamping: 1
-  m_VelocityScale: 1
-  m_AngularVelocityDamping: 1
-  m_AngularVelocityScale: 1
-  m_TrackPosition: 1
-  m_SmoothPosition: 1
-  m_SmoothPositionAmount: 5
-  m_TightenPosition: 0.5
-  m_TrackRotation: 0
-  m_SmoothRotation: 0
-  m_SmoothRotationAmount: 5
-  m_TightenRotation: 0.5
-  m_ThrowOnDetach: 0
-  m_ThrowSmoothingDuration: 0.25
-  m_ThrowSmoothingCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  m_ThrowVelocityScale: 1.5
-  m_ThrowAngularVelocityScale: 1
-  m_ForceGravityOnDetach: 0
-  m_RetainTransformParent: 0
-  m_AttachPointCompatibilityMode: 0
+--- !u!114 &2087111739730982351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087111739730982348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1983cc1558d0d794e995f48993c33b41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable: {fileID: 2087111739730982349}
+  actionInstantanee: 1
+  isSelected: 0
+  interactorPosition: {x: 0, y: 0, z: 0}
+  _controllerposition: {fileID: 0}
 --- !u!23 &2636642915585082314
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10475,7 +10436,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2087111739730982348}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.456, z: -0.6079999}
+  m_LocalPosition: {x: 0, y: 0.456, z: -0.6}
   m_LocalScale: {x: 0.8, y: 0.3, z: 0.02}
   m_Children:
   - {fileID: 2084469764557198292}
@@ -10494,7 +10455,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2087111738895877989}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.7597, z: -0.6079999}
+  m_LocalPosition: {x: 0, y: 0.7597, z: -0.6}
   m_LocalScale: {x: 0.8, y: 0.3, z: 0.02}
   m_Children:
   - {fileID: 2084469763712541053}
