@@ -5,7 +5,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class Color_Switch : MonoBehaviour
 {
-    [SerializeField] XRSimpleInteractable interactable;
+    [SerializeField] XRGrabInteractable interactable;
     private GameObject selector;
     public bool isHightLighted = false;
     private Color hightLightColor = Color.black;
