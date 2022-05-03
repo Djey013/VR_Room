@@ -62,4 +62,5 @@ public class BaseActionnable : MonoBehaviour
             ActionContinue(_interactorPosition.position);
         }
     }
+    
 }
