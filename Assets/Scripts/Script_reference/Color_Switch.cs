@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,9 +7,11 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class Color_Switch : MonoBehaviour
 {
     [SerializeField] XRGrabInteractable interactable;
-    private GameObject selector;
     public bool isHightLighted = false;
-    private Color hightLightColor = Color.black;
+
+    public Color colorBase;
+    public GameObject hightLightedGameObject;
+    
     
     private void OnEnable()
     {
@@ -21,12 +24,18 @@ public class Color_Switch : MonoBehaviour
         interactable.hoverEntered.RemoveListener(Highlighted);
         interactable.hoverExited.RemoveListener(NotPointed);
     }
-    
-    
+
+    private void Start()
+    {
+        colorBase = hightLightedGameObject.GetComponent<Renderer>().material.GetColor("_BaseColor");
+        
+    }
+
     public void NotPointed(HoverExitEventArgs args)
     {
-        selector = args.interactableObject.transform.gameObject;
-        selector.GetComponent<Renderer>().material.SetColor("_BaseColor", Color.black);
+        
+        hightLightedGameObject.GetComponent<Renderer>().material.SetColor("_BaseColor", colorBase);
+        
         //selector = null;
         isHightLighted = false;
         
@@ -34,9 +43,11 @@ public class Color_Switch : MonoBehaviour
     
     public void Highlighted(HoverEnterEventArgs args)
     {
-        selector = args.interactableObject.transform.gameObject;
-        selector.GetComponent<Renderer>().material.SetColor("_BaseColor", Color.yellow);
+        
+        hightLightedGameObject.GetComponent<Renderer>().material.SetColor("_BaseColor", Color.yellow);
+        
         isHightLighted = true;
+        
     }
     
     
