@@ -20,7 +20,7 @@ public class Tiroir : BaseActionnable
     protected override void ActionContinue(Vector3 interactor)
     {
         base.ActionContinue(interactor);        //action de base du script BaseActionnable
-                                                //auquels on rajoute des element dans cette fonction (d'où "l'override")
+                                                //auquels on rajoute des elements dans cette fonction (d'où "l'override")
 
         if (prevInteractorPosZ == 0f)           //determiner la position precedente de l'interactor en commencant par 0 à la 1ere frame
         {
